@@ -16,7 +16,6 @@ function SongList({songList}) {
                 {/* Lặp songList bằng map */}
                 {/* bắt buộc phải để key */}
                 {songList.map(song => (
-                    
                     <li key={song.id}>
                         <p>Tên bài hát :{song.songName}</p>
                         <p>Tên ca sĩ : {song.singerName}</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import TodoFeature from './features/Todo';
 import SongFeature from './features/Song';
 
@@ -13,5 +13,4 @@ function App() {
     </div>
   );
 }
-// ok
 export default App;
