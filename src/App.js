@@ -6,6 +6,7 @@ import SongFeature from './features/Song';
 function App() {
   return (
     <div className="App">
+      {/* this is app js */}
       <TodoFeature />
       <SongFeature />
     </div>
