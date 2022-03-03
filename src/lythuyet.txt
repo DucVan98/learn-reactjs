@@ -1,0 +1,32 @@
+1. ReactDOM.render() : giúp  render dữ liệu. Chỉ sử dụng 1 lần ở file index.js trong src
+eg: 
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+2. Component : là trung tâm của vũ trụ react js : chia nhỏ web ra thành nhiều component để dễ quản lý,
+ dễ hiểu hơn
+    - phân loại component
+        + phân loại theo cú pháp : class và function (hook)
+            * class sẽ có 1 hàm render và trả về 1 jsx
+            * function : có return trả về 1 jsx
+        + chia theo chức năng : 
+            * container: 
+                -  quan tâm dữ liệu là gì
+                - không biết render kiểu gì
+                - chuyển dữ liệu xuống presentational để render dữ liệu ra ngoài giao diện.
+                - càng ít thằng quản lý dữ liệu càng tốt
+            * presentational : 
+                - render dữ liệu ra giao diện
+                - xử lý dữ liệu từ container chuyển xuống để render ra giao diện
+                - càng nhiều càng tốt
+
+3. Props và composition 
+    - Props : 
+        + là dữ liệu được chuyền từ component cha xuống component con 
+        + dữ liệu của props chỉ đọc không thể chỉnh sửa ( nếu muốn chỉnh sửa phải vào component cha để sửa)
+        + giúp tạo ra sự đa dạng cho component. Cùng một component với props khác nhau thì sẽ render ra khác nhau.
+    - Khai báo props và kiểm tra kiểu dữ liệu của props : props có thể dùng mà không cần định nghĩa ( không nên )
+    - key search : propstype react js 
